@@ -15,6 +15,10 @@
 		position: relative;
 	}
 
+	img {
+		max-width: 100%;
+	}
+
 	p {
 		margin-block-start: 0;
 		margin-block-end: 0;
@@ -229,6 +233,9 @@
 	}
 
 /* layout */
+	body {
+		padding: 0 .5em 
+	}
 
 	#index {
 		padding: .5em;
@@ -316,6 +323,9 @@
 @media screen and ( min-width: 700px) {
 
 /* sizing */
+	body{
+		padding: 0 1em;
+	}
 
 	h2 {
 		font-size: 1.5em;
