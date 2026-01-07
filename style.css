@@ -283,7 +283,7 @@
 	/* hide the menu above while not in use */
 	#index {
 		right: 0;
-		top: -700px;
+		top: -900px;
 	}
 	/* slow transitions */
 	button, #index, #gal {
@@ -295,7 +295,7 @@
 	}
 	/* bring menu down for viewing */
 	.slide {
-		transform: translateY(766px);
+		transform: translateY(966px);
 	}
 	/* dim gallery when menu is open */
 	.dim {
