@@ -10,7 +10,7 @@
 	}
 
 	body {
-		margin: 0 1em auto;
+		margin: 0 auto;
 		max-width: 100vw;
 		position: relative;
 	}
@@ -156,13 +156,13 @@
 	}
 
 /* gallery */
+	main {
+		padding-top: 1em;
+	}
+
 	#gal{
 		position: relative;
 		z-index: 10;
-	}
-
-	.cap {
-		padding: 1em;
 	}
 
 	.piece  img {
@@ -260,7 +260,7 @@
 		justify-content: flex-start;
 	}
 
-	.info > * {
+	.info > *, .cap {
 		text-align: left;
 	}
 
@@ -268,16 +268,25 @@
 		justify-content: flex-start;
 	}
 
-	/* add a separator to small items  */
-	.small + .small::before {
+	.cap > p {
+		margin-bottom: .5em;
+	}
+	/* add separators to info items */
+		.info *:not(:last-child)::after{
 		content: '|';
 		margin: 1em;
+		font-style: normal;
 	}
+	/* add a separator to small items  */
+	/* .small + .small::before {
+		content: '|';
+		margin: 1em;
+	} */
 
 	/* force first .small item onto a new line */
-	*:not(.small):has( + .small) {
+	/* *:not(.small):has( + .small) {
 		flex-basis: 100%;
-	}
+	} */
 
 /* toggle mechanics */
 	/* hide the menu above while not in use */
