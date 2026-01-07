@@ -186,12 +186,10 @@
 		display: flex;
 	}
 
-	.cap > ul *:not(:first-child)::before{
-		content: '|';
-		margin: 1em;
-		font-style: normal;
+	.wordSP {
+		word-spacing: 1em;
 	}
-	
+
 	.info {
 		display: flex;
 		flex-wrap: wrap;
