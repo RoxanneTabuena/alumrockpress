@@ -186,9 +186,11 @@
 		margin: 1em;
 	}
 
-	.cap > ul {
-		display: flex;
+	.cap p {
+		text-align: center;
+		opacity: .7;
 	}
+
 
 	.wordSP {
 		word-spacing: 1em;
@@ -287,16 +289,6 @@
 		margin: 1em;
 		font-style: normal;
 	}
-	/* add a separator to small items  */
-	/* .small + .small::before {
-		content: '|';
-		margin: 1em;
-	} */
-
-	/* force first .small item onto a new line */
-	/* *:not(.small):has( + .small) {
-		flex-basis: 100%;
-	} */
 
 /* toggle mechanics */
 	/* hide the menu above while not in use */
