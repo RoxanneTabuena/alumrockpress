@@ -228,10 +228,10 @@
 	}
 
 	.center, .center p{
-		text-align: center!important;
+		text-align: center;
 	}
 
-	.center > .info {
+	.center > .info, ul.center {
 		width: fit-content;
 		margin: 0 auto;
 		text-align: left;
