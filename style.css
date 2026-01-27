@@ -202,6 +202,12 @@
 		width:fit-content
 	}
 
+/* footer */
+
+	footer{ 
+		margin-top: 10em;
+		text-align: center;
+	}
 /* PHONE RULES */
 @media screen and ( max-width: 699px) {
 /* sizing */
@@ -227,7 +233,7 @@
 		padding: 0 .5em 
 	}
 
-	.center, .center p, footer{
+	.center, .center p{
 		text-align: center;
 	}
 
