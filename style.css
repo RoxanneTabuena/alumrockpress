@@ -286,6 +286,10 @@
 		margin-bottom: .5em;
 	}
 
+	.footnote {
+		margin-top: 12em;
+	}
+
 /* toggle mechanics */
 	/* hide the menu above while not in use */
 	#index {
@@ -388,6 +392,11 @@
 	.cap > ul {
 		justify-content: center;
 	}
+
+	.footnote {
+			margin-top: 20em;
+		}
+
 	/* add separators to info items */
 	.info *:not(:first-child)::before{
 		content: '|';
