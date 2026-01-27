@@ -47,11 +47,11 @@ items.forEach((item)=>{
 
 // info wrapping
 
-// const li = Array.from(document.querySelectorAll('li'))
-// const smalls = li.filter((i)=>i.innerText.length < 25)
-// smalls.forEach((s)=>{
-//     s.classList.add('small')
-// })
+const li = Array.from(document.querySelectorAll('li'))
+const smalls = li.filter((i)=>i.innerText.length < 15)
+smalls.forEach((s)=>{
+    s.classList.add('small')
+})
 
 // index highlight
 let cur
