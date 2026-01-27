@@ -190,6 +190,7 @@
 
 	.wordSP {
 		word-spacing: 1em;
+		margin-top: 2em;
 	}
 
 
@@ -253,7 +254,9 @@
 		/* trick to hide animation */
 		box-shadow: 0em -1em 0em 0em white  ;
 	}
-
+	.fam {
+		padding: 4em 0;
+	}
 	.piece {
 		padding-top: 4em;
 		margin-bottom: 8em;
@@ -343,6 +346,10 @@
 	#gal{
 		margin-top: 7.5em;
 		margin-left: 30em;
+	}
+
+	.fam {
+		padding: 8em 0;
 	}
 
 	.piece{
