@@ -188,12 +188,6 @@
 	}
 
 
-	.wordSP {
-		word-spacing: 1em;
-		margin-top: 2em;
-	}
-
-
 	.piece h3{
 		font-style: italic;
 	}
@@ -231,6 +225,16 @@
 /* layout */
 	body {
 		padding: 0 .5em 
+	}
+
+	.center, .center p{
+		text-align: center!important;
+	}
+
+	.center > .info {
+		width: fit-content;
+		margin: 0 auto;
+		text-align: left;
 	}
 
 	#index {
@@ -279,6 +283,12 @@
 		content: '|';
 		margin: 1em;
 		font-style: normal;
+	}
+
+	.wordSP {
+		margin: 2em 0;
+		text-align: center;
+		word-spacing: .25em;
 	}
 
 	.cap > ul {
@@ -394,6 +404,11 @@
 
 	.info {
 		justify-content: center;
+	}
+
+	.wordSP {
+		word-spacing: 1em;
+		margin-top: 2em;
 	}
 
 	.cap > ul {
