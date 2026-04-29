@@ -392,8 +392,6 @@
 
 	main {
 		display: flex;
-		overflow: hidden;
-		max-height: calc(100vh - 19px);
 	}
 
 	#index{
