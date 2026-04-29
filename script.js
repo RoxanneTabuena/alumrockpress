@@ -48,7 +48,7 @@ items.forEach((item)=>{
 // info wrapping
 
 const li = Array.from(document.querySelectorAll('li'))
-const smalls = li.filter((i)=>i.innerText.length < 15)
+const smalls = li.filter((i)=>i.innerText.length < 15 && i.parentElement.classList[0]!=='record')
 smalls.forEach((s)=>{
     s.classList.add('small')
 })

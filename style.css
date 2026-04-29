@@ -339,6 +339,10 @@
 		margin-bottom: 1em;
 	}
 
+	.record > li:not(:first-child):not(.exempt){
+		margin: .25em 0 0 1.5em;
+	}
+
 /* toggle mechanics */
 	/* hide the menu above while not in use */
 	#index {
@@ -468,6 +472,42 @@
 	.footnote {
 			margin-top: 36em;
 		}
+
+	/* CV */
+	#index.CV{
+		min-width: 0;
+		width: 240px;
+	}
+
+	.timeline {
+		margin-left: 4em;
+	}
+
+	.anual {
+		display: flex;
+		width: 100%;
+	}
+
+	.anual > p {
+		margin-right: 2em;
+	}
+
+	.record {
+		display:flex;
+		width: 100%;
+	}
+
+	.record > li:nth-child(1){
+		width: 360px;
+	}
+	.record > li:nth-child(2){
+		margin-left: 2em;
+		width: 272px;
+	}
+	.record > li:nth-child(3){
+		margin-left: 2em;
+		width: 392px;
+	}
 
 	/* add separators to info items */
 	.info *:not(:first-child)::before{
