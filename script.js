@@ -69,3 +69,4 @@ const highlight = (key) => {
 const unhighlight = () => {
     cur.classList.remove('highlight')
 }
+

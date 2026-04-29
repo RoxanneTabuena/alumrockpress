@@ -136,18 +136,18 @@
 
 	.date {
 		text-align: right;
-		width: 3.5em;
+		/* width: 3.5em; */
 		padding-right: 1em;
 	}
 	.date-l {
 		text-align: right;
-		width: 7.5em;
+		/* width: 7.5em; */
 		padding-right: 1em;
 	}
 
 	.item a {
 		text-wrap: wrap;
-		max-width: 21.5em;
+		/* max-width: 21.5em; */
 	}
 
 	/* contact animation */
@@ -163,6 +163,7 @@
 /* gallery */
 	main {
 		padding-top: 1em;
+		height: 100%;
 	}
 
 	#gal{
@@ -363,7 +364,6 @@
 
 	#gal{
 		margin-top: 7.5em;
-		margin-left: 30em;
 	}
 
 	.fam {
@@ -390,11 +390,28 @@
 	
 /* layout */
 
+	main {
+		display: flex;
+		overflow: hidden;
+		max-height: calc(100vh - 19px);
+	}
+
 	#index{
-		position: fixed;
-		top: 7.5em;
+		position: relative;
+		top: 7.5em; 
 		left: 0;
 		z-index: 100;
+		overflow-y: scroll;
+		min-width: 480px;
+	}
+	
+	#gal{
+		overflow-y: scroll;
+	}
+
+		
+	#index > *{
+		min-width: 100%;
 	}
 
 	#mainTitle{
