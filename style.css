@@ -86,6 +86,16 @@
 		cursor: pointer;
 	}
 
+	/* CV */
+
+	#gal > section > h2 {
+		font-weight: bold;
+	}
+
+	.record > li:first-child:not(.plain){
+		font-style: italic;
+	}
+
 /* header */
 	header {
 		display: flex;
@@ -117,7 +127,7 @@
 		margin-bottom: 1em;
 	}
 
-	.space > a > p, .space > p, a.space {
+	.space > a > p, .space > p, a.space, .space > .item {
 	margin-left: 4.5em;
 }
 
@@ -210,6 +220,7 @@
 		margin-top: 10em;
 		text-align: center;
 	}
+
 /* PHONE RULES */
 @media screen and ( max-width: 699px) {
 /* sizing */
@@ -310,6 +321,22 @@
 
 	.footnote {
 		margin-top: 16em;
+	}
+
+	/* CV */
+
+	.anual {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+
+	.anual > p {
+		margin-right: 1.5em;
+	}
+
+	.record {
+		margin-bottom: 1em;
 	}
 
 /* toggle mechanics */

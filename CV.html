@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Cal Tabuena-Frolli</title>
+		<link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="script.js" defer></script>
+	</head>
+    <body>
+        <header>
+            <a href="index.html" class="home">
+                <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/Logo.png" alt="Alum Rock Press Logo">
+                <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/Cal/Header.png" alt="Alum Rock Press Header">
+            </a>
+            <div id="mainTitle">
+                <h1 onclick="togMenu()">CV</h1>
+                <button id="menuTog" onclick="togMenu()">></button>
+            </div>
+        </header>
+        <main>
+            <div id="index">
+                <!-- current page navigation -->
+                <section>
+                    <div>
+                        <h2 id="miniTitle">CV</h2>
+                    </div>
+                    <div class="space">
+                        <div class="item">
+                            <a href="CV.html#A">Cal Tabuena-Frolli</a>
+                        </div>
+                        <div class="item">
+                            <a href="CV.html#B">Education</a>
+                        </div>
+                        <div class="item">
+                            <a href="CV.html#C">Solo Exhibition and Performance</a>
+                        </div>
+                        <div class="item">
+                            <a href="CV.html#D">Group Exhibitions</a>
+                        </div>
+                        <div class="item">
+                            <a href="CV.html#E">Collaborative Work, Commissions, Practice</a>
+                        </div>
+                        <div class="item">
+                            <a href="CV.html#F">Selected Publications</a>
+                        </div>
+                        <div class="item">
+                            <a href="CV.html#G">Workshops Attended</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- site wide navigation -->
+                <section>
+                    <h2>COLLECTIONS</h2>
+                    <div class="space">
+                        <a href="index.html">
+                            <p>Current Work</p>
+                        </a>
+                        <a href="02_Commissions.html">
+                            <p>Commissions</p>
+                        </a>
+                        <a href="03_Photography.html">
+                            <p>Photography</p>
+                        </a>
+                        <a href="04_Prints_and_Series.html">
+                            <p>Prints and Series</p>
+                        </a>
+                        <a href="05_Books_and_Zines.html">
+                            <p>Books and Zines</p>
+                        </a>
+                    </div>
+                </section>
+                <section>
+                    <h2>ARTICLES</h2>
+                    <div class="space">
+                        <a href="about.html">
+                            <p>About Me</p>
+                        </a>
+                        <p id="contact" onclick="togEmail()">Contact</p>
+                        <p id="email" onclick="togEmail()">tabuenafrolli@gmail.com</p>
+                    </div>
+                </section>
+            </div>
+            <div id="gal">
+                <section id="A" onmouseenter="highlight('A')" onmouseleave="unhighlight('A')">
+                    <h2>Cal Tabuena-Frolli</h2>
+                    <div class="timeline">
+                        <div class="anual">
+                            <p>1991</p>
+                            <ul class="record">
+                                <li class="plain">Born in San Jose, California</li>
+                                <li>Lives and works in Los Angeles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section id="B" onmouseenter="highlight('B')" onmouseleave="unhighlight('B')">
+                    
+                </section>
+                <section id="C" onmouseenter="highlight('C')" onmouseleave="unhighlight('C')">
+
+                </section>
+                <section id="D" onmouseenter="highlight('D')" onmouseleave="unhighlight('D')">
+                    <h2>Group Exhibitions</h2>
+                    <div class="timeline">
+                        <div class="anual">
+                            <p>2025</p>
+                            <div>
+                                <ul class="record">
+                                    <li>Fragile Earth: A Call to Action </li>
+                                    <li>Bankhead Theater, Livermore </li>
+                                    <li>Livermore Valley Arts</li>
+                                </ul>
+                                <ul class="record">
+                                    <li> Open Call: All Media 2025 </li>
+                                    <li>Studio Channel Islands, Camarillo </li>
+                                    <li>Taylor Bythewood-Porter, Peter Carlson, Michael Todd</li>
+                                </ul>
+                                <ul class="record">
+                                    <li>Expanding the Field; New ideas in and beyond print </li>
+                                    <li>Triton Museum, Santa Clara </li>
+                                    <li>California Society of Printmakers</li>
+                                </ul>
+                                <ul class="record">
+                                    <li>2025 Left Coast Annual Exhibition </li>
+                                    <li>Sanchez Art Center, Pacifica </li>
+                                    <li>Carin Adams — Oakland Museum of California</li>
+                                </ul>
+                                <ul class="record">
+                                    <li>Afters in LA </li>
+                                    <li>Birdhouse Gallery, Los Angeles </li>
+                                    <li>Paulette Hartman and Emma Aronoff-Aspaturian</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="anual">
+                            <p>2019</p>
+                            <ul class="record">
+                                <li>12th Annual Art About Agriculture </li>
+                                <li>Santa Paula Art Museum, Santa Paula </li>
+                                <li>John Nichols and Gail Pidduck</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section id="E" onmouseenter="highlight('E')" onmouseleave="unhighlight('E')">
+
+                </section>
+                <section id="F" onmouseenter="highlight('F')" onmouseleave="unhighlight('F')">
+
+                </section>
+                <section id="G" onmouseenter="highlight('G')" onmouseleave="unhighlight('G')">
+
+                </section>
+            </div>
+        </main>
+        <footer>&copy; 2023 Cal Thomas Tabuena-Frolli</footer>
+    </body>
+</html>
