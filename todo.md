@@ -1,11 +1,11 @@
 4.29
-desktop index bug
+desktop index bug 1h<<>>
 - test wrapper setup 11:21 - 11:32
 - text flex setup 11:32 - 11:59
     - understand width issue 11:40 - 11:59
 - live test FAIL
 
-write up CV
+write up CV 3h<<>>
 - page set up 12:13 - 12:39
 - fill out index 12:39 - 12:46
 - create article format 12:46 - 12:54
@@ -17,13 +17,24 @@ write up CV
         - anual 1:10 - 1:16
         - record 1:16 - 1:18
 - style text 1:19 - 1:25
-- populate page
-- desktop
+- populate page 1:26 - 2:31
+    - C 1:40 - 1:42
+    - E 1:42 - 206
+    - F 2:09 - 221
+    - G 221 - 2:27
+- desktop 2:33 - 
+    - timeline 2:33 - 2:37
+    - anual 237 - 238
+    - record 238 - 258
 
+5.14
 add CV to menus
-- index
-- about
-- mobile testing
+- index 912 - 923
+- about 923 - 927
+- adjust articles order 928 - 930
+- mobile testing 930 - 931
+
+- Adjust CV spacing for narrow desktops
 
 add document icon
 
@@ -34,3 +45,4 @@ resources
 Future:
 - individual scrolling for index
 - upcoming events
+- link CV items to site counterparts
