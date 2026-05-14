@@ -70,3 +70,17 @@ const unhighlight = () => {
     cur.classList.remove('highlight')
 }
 
+// set header height
+const header = document.querySelector('header');
+const root = document.documentElement;
+
+// Function to measure and update
+function updateHeaderHeight() {
+    console.log('update')
+  const height = header.offsetHeight; // Gets height including padding/borders
+  root.style.setProperty('--header-height', `${height}px`);
+}
+
+// Run on load and window resize
+window.addEventListener('resize', updateHeaderHeight);
+updateHeaderHeight();
