@@ -374,10 +374,9 @@
 		margin-bottom: 1em;
 	}
 
-	.record > li:not(:first-child):not(.exempt){
-		margin: .25em 0 0 1.5em;
+	.record > li {
+		text-wrap: wrap;
 	}
-
 /* toggle mechanics */
 	/* hide the menu above while not in use */
 	#index {
@@ -519,7 +518,7 @@
 	}
 
 	.timeline {
-		margin-left: 4em;
+		margin-left: 2em;
 	}
 
 	.anual {
@@ -533,19 +532,30 @@
 
 	.record {
 		display:flex;
-		width: 100%;
+		width: var(--record-width);
+		max-width: var(--record-width);
+	}
+
+	.record > li {
+		overflow-wrap: break-word !important;
 	}
 
 	.record > li:nth-child(1){
-		width: 360px;
+		min-width: var(--li-1-width) !important;
+		width: var(--li-1-width) !important;
+		max-width: var(--li-1-width) !important;
+		padding-right: 1.5em
 	}
 	.record > li:nth-child(2){
-		margin-left: 2em;
-		width: 272px;
+		min-width: var(--li-2-width) !important;
+		width: var(--li-2-width) !important;
+		max-width: var(--li-2-width) !important;
+		padding-right: 1.5em;
 	}
 	.record > li:nth-child(3){
-		margin-left: 2em;
-		width: 392px;
+		min-width: var(--li-3-width) !important;
+		width: var(--li-3-width) !important;
+		max-width: var(--li-3-width) !important;
 	}
 
 	/* add separators to info items */

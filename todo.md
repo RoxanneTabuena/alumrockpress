@@ -38,6 +38,8 @@ add CV to menus
     - understand what is triggering scrolling 10 - 1020
     - adjust maon heoght max 1020 - 2023
 - mobile testing 1023 - 
+
+- set limit to CV width on desktop
 - Adjust CV spacing for narrow desktops 
 
 add document icon
