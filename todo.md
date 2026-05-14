@@ -33,8 +33,12 @@ add CV to menus
 - about 923 - 927
 - adjust articles order 928 - 930
 - mobile testing 930 - 931
-
-- Adjust CV spacing for narrow desktops
+- adjust menu scrolling behavior 932 - 1023
+    - position main content according to header height 932 - 10
+    - understand what is triggering scrolling 10 - 1020
+    - adjust maon heoght max 1020 - 2023
+- mobile testing 1023 - 
+- Adjust CV spacing for narrow desktops 
 
 add document icon
 
