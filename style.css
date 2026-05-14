@@ -145,6 +145,12 @@
 /* layout */
 	:root{
 		--header-height: 1em;
+		--index-width:1em;
+		--gal-width: calc(100vw - var(--index-width));
+		--record-width: calc(var(--gal-width) - 69px);
+		--li-1-width: calc(var(--record-width) * .35);
+		--li-2-width: calc(var(--record-width) * .27);
+		--li-3-width: calc(var(--record-width) * .38);
 	}
 
 	main {
@@ -402,6 +408,10 @@
 /* sizing */
 	body{
 		padding: 0 1em;
+	}
+
+	#gal{
+		max-width: var(--gal-width);
 	}
 
 	h2 {

@@ -76,11 +76,18 @@ const root = document.documentElement;
 
 // Function to measure and update
 function updateHeaderHeight() {
-    console.log('update')
-  const height = header.offsetHeight; // Gets height including padding/borders
-  root.style.setProperty('--header-height', `${height}px`);
+    const height = header.offsetHeight; // Gets height including padding/borders
+    root.style.setProperty('--header-height', `${height}px`);
+}
+
+// set index width
+// Function to measure and update
+function updateIndexWidth() {
+    const width = index.offsetWidth; // Gets width including padding/borders
+    root.style.setProperty('--index-width', `${width}px`);
 }
 
 // Run on load and window resize
-window.addEventListener('resize', updateHeaderHeight);
+window.addEventListener('resize', updateHeaderHeight &&updateIndexWidth);
 updateHeaderHeight();
+updateIndexWidth();
