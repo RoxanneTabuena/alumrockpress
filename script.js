@@ -95,7 +95,7 @@ function updateDateWidth() {
         return
     }
     const width = date.offsetWidth; // Gets width including padding/borders
-    root.style.setProperty('--date-width', `${width}px`);
+    root.style.setProperty('--date-width', `${Math.ceil(width)}px`);
 }
 
 // Run on load and window resize

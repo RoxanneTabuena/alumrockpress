@@ -1,582 +1,583 @@
 /* resets*/
-	* {
-		cursor: default;
-		margin-block-start: 0;
-		margin-block-end: 0;
-		font-weight: 100;
-		max-width: 100vw;
-		position: relative;
-		z-index: inherit;
-	}
+* {
+  cursor: default;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-weight: 100;
+  max-width: 100vw;
+  position: relative;
+  z-index: inherit;
+}
 
-	body {
-		margin: 0 auto;
-		max-width: 100vw;
-		position: relative;
-	}
+body {
+  margin: 0 auto;
+  max-width: 100vw;
+  position: relative;
+}
 
-	img {
-		max-width: 100%;
-	}
+img {
+  max-width: 100%;
+}
 
-	p {
-		margin-block-start: 0;
-		margin-block-end: 0;
-	}
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
 
-	a:link {
+a:link {
+  text-decoration: none;
+  color: black;
+}
 
-		text-decoration: none;
-		color: black;
-	}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
 
-	a:visited {
+a:active {
+  text-decoration: none;
+  color: black;
+}
 
-		text-decoration: none;
-		color: black;
-	}
+button {
+  all: unset;
+}
 
-	a:active {
+ul {
+  padding-inline-start: 0;
+  list-style: none;
+}
 
-		text-decoration: none;
-		color: black;
-	}
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
 
-	button{
-		all: unset;
-	}
-
-	ul {
-		padding-inline-start: 0;
-		list-style: none;
-	}
-
-		/* Hide scrollbar for Chrome, Safari and Opera */
-	*::-webkit-scrollbar {
-	display: none;
-	}
-
-	/* Hide scrollbar for IE, Edge and Firefox */
-	* {
-	-ms-overflow-style: none;  /* IE and Edge */
-	scrollbar-width: none;  /* Firefox */
-	}
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 
 /* text styling */
-	html {
-		font-family: 'AvenirNextLTPro-Regular';
-		background-color: white;
-	}
+html {
+  font-family: "AvenirNextLTPro-Regular";
+  background-color: white;
+}
 
-	@font-face {
-		font-family:"AvenirNextLTPro-Regular";
-		src: url("AvenirNextLTPro-Regular.otf");
-	}
+@font-face {
+  font-family: "AvenirNextLTPro-Regular";
+  src: url("AvenirNextLTPro-Regular.otf");
+}
 
-	*{
-		font-size: 16px;
-	}
+* {
+  font-size: 16px;
+}
 
+a:hover {
+  text-decoration: none;
+  color: #8c3728;
+}
 
-	a:hover {
+h2 {
+  font-size: 1.5em;
+}
 
-		text-decoration: none;
-		color: #8c3728;
-	}
+h1 {
+  font-size: 2.5em;
+}
 
-	h2 {
-		font-size: 1.5em;
-	}
+a,
+a > * {
+  cursor: pointer;
+}
 
-	h1 {
-		font-size: 2.5em;
-	}
+/* CV */
 
-	a, a> * {
-		cursor: pointer;
-	}
+/* section titles */
+#gal > section > h2 {
+  font-weight: bold;
+}
 
-	/* CV */
-
-	/* section titles */
-	#gal > section > h2 {
-		font-weight: bold;
-	}
-
-	/* italicize all first points unless they are classified as .plain */
-	.record > li:first-child:not(.plain){
-		font-style: italic;
-	}
+/* italicize all first points unless they are classified as .plain */
+.record > li:first-child:not(.plain) {
+  font-style: italic;
+}
 
 /* header */
-	header {
-		display: flex;
-		align-items: baseline;
-		width: 100%;
-		position: fixed;
-		z-index: 500;
-		top: 0;
-		justify-content: space-between;
-		margin: 0;
-		left: 0;
-		background-color: white !important;
-	}
+header {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  position: fixed;
+  z-index: 500;
+  top: 0;
+  justify-content: space-between;
+  margin: 0;
+  left: 0;
+  background-color: white !important;
+}
 
-	header *{
-		z-index: 100;
-	}
+header * {
+  z-index: 100;
+}
 
-	/* upper page title */
-	#mainTitle {
-		display: flex;
-		align-items: center;
-	}
+/* upper page title */
+#mainTitle {
+  display: flex;
+  align-items: center;
+}
 
-	/* upper left logo/home button */
-	.home {
-		margin: 1em 1em 0 1em;
-		display:flex;
-		align-items: flex-end;
-		flex-grow: 0;
-		background-color: white;
-	}
-
+/* upper left logo/home button */
+.home {
+  margin: 1em 1em 0 1em;
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 0;
+  background-color: white;
+}
 
 /* layout */
-	/* calculating variables for later use */
-	:root{
-		--header-height: 1em;
-		--index-width:1em;
-		--date-width: 1em;
-		--gal-width: calc(100vw - var(--index-width));
-		--record-width: calc(var(--gal-width) - 69px);
-		--li-1-width: calc(var(--record-width) * .35);
-		--li-2-width: calc(var(--record-width) * .27);
-		--li-3-width: calc(var(--record-width) * .38);
-	}
+/* calculating variables for later use */
+:root {
+  --header-height: 1em;
+  --index-width: 1em;
+  --date-width: 1em;
+  --gal-width: calc(100vw - var(--index-width));
+  --record-width: calc(var(--gal-width) - 69px);
+  --li-1-width: calc(var(--record-width) * 0.35);
+  --li-2-width: calc(var(--record-width) * 0.27);
+  --li-3-width: calc(var(--record-width) * 0.38);
+}
 
-	main {
-		position: relative;
-		top: var(--header-height);
-		min-height: calc(100vh - var(--header-height));
-		max-height: calc(100vh - var(--header-height));
-		overflow-y: scroll;
-	}
+main {
+  position: relative;
+  top: var(--header-height);
+  min-height: calc(100vh - var(--header-height));
+  max-height: calc(100vh - var(--header-height));
+  overflow-y: scroll;
+}
 
 /* index */
-	/* space below titles and sections */
-	h2, section{
-		margin-bottom: 1em;
-	}
+/* space below titles and sections */
+h2,
+section {
+  margin-bottom: 1em;
+}
 
-	/* control standard indenting */
-	.space {
-		margin-left: var(--date-width);
-	}
-	
+/* control standard indenting */
+.space {
+  margin-left: var(--date-width);
+}
 
+/* index lines */
+.item {
+  display: flex;
+}
 
+.item:hover {
+  color: #8c3728;
+}
 
-	.item {
-		display: flex;
-	}
+/* index dates */
+.date {
+  text-align: right;
+  padding-right: 1em;
+}
 
-	.item:hover{
-		color: #8c3728;
-	}
+/* index dates adjusted to the width of a larger date*/
+.ext {
+  min-width: var(--date-width);
+  text-align: left;
+  padding-right: 0 !important;
+}
 
-	.date {
-		text-align: right;
-		padding-right: 1em;
-	}
-	
-	/* push out dates to account for a larger outlier in about page*/
-	.ext{
-		min-width: var(--date-width);
-		text-align: left;
-		padding-right: 0 !important;
-	}
+/* wrap the text of extra long index items */
+.item a {
+  text-wrap: wrap;
+}
 
-	/* wrap the text of extra long index items */
-	.item a {
-		text-wrap: wrap;
-	}
+/* contact animation */
+#contact:hover,
+#email:hover {
+  color: #8c3728;
+  cursor: pointer;
+}
 
-	/* contact animation */
-	#contact:hover, #email:hover{
-		color: #8c3728;
-		cursor: pointer;
-	}
-
-	/* set size for page breaks */
-	.break {
-		height: 2em;
-	}
+/* set size for page breaks */
+.break {
+  height: 2em;
+}
 
 /* gallery */
 
-	#gal{
-		position: relative;
-		z-index: 10;
-	}
+#gal {
+  position: relative;
+  z-index: 10;
+}
 
-	/* center images for each piece */
-	.piece  img {
-		display: block;
-		margin: auto;
-	}
+/* center images for each piece */
+.piece img {
+  display: block;
+  margin: auto;
+}
 
-	/* indent image captions */
-	.cap {
-		padding: .5em;
-	}
+/* indent gallery captions */
+.cap {
+  padding: 0.5em;
+}
 
-	/*  */
-	.piece > .cap {
-		margin: 1em;
-	}
+/* piece name */
+.piece h3 {
+  font-style: italic;
+}
 
-	.cap p {
-		text-align: center;
-		opacity: .7;
-	}
+.piece section {
+  margin-bottom: 3em;
+}
 
-
-	.piece h3{
-		font-style: italic;
-	}
-	
-	.piece section {
-		margin-bottom:3em;
-	}
-
-	section.left {
-		text-align: left;
-		margin: auto;
-		width:fit-content
-	}
+section.left {
+  text-align: left;
+  margin: auto;
+  width: fit-content;
+}
 
 /* footer */
 
-	footer{ 
-		margin-top: 10em;
-		text-align: center;
-	}
+footer {
+  margin-top: 10em;
+  text-align: center;
+}
 
 /* PHONE RULES */
-@media screen and ( max-width: 699px) {
-/* sizing */
+@media screen and (max-width: 699px) {
+  /* sizing */
 
-	.home > *{
-		width: 2.5em;
-	}
+  .home > * {
+    width: 2.5em;
+  }
 
-	h2 {
-		font-size: 1.2em;
-	}
+  h2 {
+    font-size: 1.2em;
+  }
 
-	h1, #menuTog {
-		font-size: 1.44em;
-	}
+  h1,
+  #menuTog {
+    font-size: 1.44em;
+  }
 
-	#gal {
-		margin-top: 4em;
-	}
+  #gal {
+    margin-top: 4em;
+  }
 
-/* layout */
-	body {
-		padding: 0 .5em 
-	}
+  /* layout */
+  body {
+    padding: 0 0.5em;
+  }
 
-	.center, .center p{
-		text-align: center;
-	}
+  .center,
+  .center p {
+    text-align: center;
+  }
 
-	.center > .info, ul.center {
-		width: fit-content;
-		margin: 0 auto;
-		text-align: left;
-	}
+  .center > .info,
+  ul.center {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+  }
 
-	#index {
-		padding: .5em;
-		position: fixed;
-		background-color: white;
-		box-shadow: 2px 2px 4px #484848;
-		z-index: 90;
-		overflow: scroll;
-		max-height: 90vh;
-	}
+  #index {
+    padding: 0.5em;
+    position: fixed;
+    background-color: white;
+    box-shadow: 2px 2px 4px #484848;
+    z-index: 90;
+    overflow: scroll;
+    max-height: 90vh;
+  }
 
-	#miniTitle{
-		display: none;
-	}
+  /* hide index title on mobile menu */
+  #miniTitle {
+    display: none;
+  }
 
-	#menuTog {
-		margin: 0 .5em;
-	}
+  #menuTog {
+    margin: 0 0.5em;
+  }
 
-	header {
-		/* trick to hide animation */
-		box-shadow: 0em -1em 0em 0em white  ;
-	}
-	.fam {
-		padding: 4em 0;
-	}
-	.piece {
-		padding-top: 4em;
-		margin-bottom: 8em;
-	}
+  header {
+    /* trick to hide animation */
+    box-shadow: 0em -1em 0em 0em white;
+  }
 
+  .fam {
+    padding: 4em 0;
+  }
 
-	.info {
-		margin-bottom: 1em;
-	}
+  .piece {
+    padding-top: 4em;
+    margin-bottom: 8em;
+  }
 
-	.info > *, .cap, .small {
-		text-align: left;
-	}
+  .info {
+    margin-bottom: 1em;
+  }
 
-	.small {
-		display: inline;
-	}
+  .info > *,
+  .cap,
+  .small {
+    text-align: left;
+  }
 
-	.small *:not(:first-child)::before{
-		content: '|';
-		margin: 1em;
-		font-style: normal;
-	}
+  .small {
+    display: inline;
+  }
 
-	.wordSP {
-		margin: 2em 0;
-		text-align: center;
-		word-spacing: .25em;
-	}
+  /* add these:| in-between your info items */
+  .small *:not(:first-child)::before {
+    content: "|";
+    margin: 1em;
+    font-style: normal;
+  }
 
-	.cap > ul {
-		justify-content: flex-start;
-	}
+  /* auto group smaller info items */
+  .wordSP {
+    margin: 2em 0;
+    text-align: center;
+    word-spacing: 0.25em;
+  }
 
-	.cap > p {
-		margin-bottom: .5em;
-	}
+  /* gallery caption formatting */
+  .cap > ul {
+    justify-content: flex-start;
+  }
 
-	.footnote {
-		margin-top: 16em;
-	}
+  .cap > p {
+    margin-bottom: 0.5em;
+  }
 
-	/* CV */
+  .footnote {
+    margin-top: 16em;
+  }
 
-	.anual {
-		display: flex;
-		align-items: flex-start;
-		justify-content: flex-start;
-	}
+  /* CV */
 
-	.anual > p {
-		margin-right: 1.5em;
-	}
+  .anual {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 
-	.record {
-		margin-bottom: 1em;
-	}
+  .anual > p {
+    margin-right: 1.5em;
+  }
 
-	.record > li {
-		text-wrap: wrap;
-	}
-/* toggle mechanics */
-	/* hide the menu above while not in use */
-	#index {
-		right: 0;
-		top: -900px;
-	}
-	/* slow transitions */
-	button, #index, #gal {
-		transition: .5s
-	}
-	/* turn arrow down and raise on toggle */
-	.rotDown {
-		transform: rotate(90deg) translate(-2px, 0);
-	}
-	/* bring menu down for viewing */
-	.slide {
-		transform: translateY(966px);
-	}
-	/* dim gallery when menu is open */
-	.dim {
-		opacity: .6;
-	}
+  .record {
+    margin-bottom: 1em;
+  }
+
+  .record > li {
+    text-wrap: wrap;
+  }
+
+  /* toggle mechanics */
+  /* hide the menu above while not in use */
+  #index {
+    right: 0;
+    top: -900px;
+  }
+  /* slow transitions */
+  button,
+  #index,
+  #gal {
+    transition: 0.5s;
+  }
+  /* turn arrow down and raise on toggle */
+  .rotDown {
+    transform: rotate(90deg) translate(-2px, 0);
+  }
+  /* bring menu down for viewing */
+  .slide {
+    transform: translateY(966px);
+  }
+  /* dim gallery when menu is open */
+  .dim {
+    opacity: 0.6;
+  }
 }
 
 /* DESK RULES */
-@media screen and ( min-width: 700px) {
+@media screen and (min-width: 700px) {
+  /* sizing */
+  body {
+    padding: 0 1em;
+  }
 
-/* sizing */
-	body{
-		padding: 0 1em;
-	}
+  #gal {
+    max-width: var(--gal-width);
+  }
 
-	#gal{
-		max-width: var(--gal-width);
-	}
+  h2 {
+    font-size: 1.5em;
+  }
 
-	h2 {
-		font-size: 1.5em;
-	}
+  h1 {
+    font-size: 2.5em;
+  }
 
-	h1 {
-		font-size: 2.5em;
-	}
+  .home > * {
+    width: 5em;
+  }
 
-		
-	.home > *{
-		
-		width: 5em;
-	}
+  .home,
+  #index {
+    width: 30em;
+  }
 
-	.home, #index {
-		width: 30em;
-	}
+  .fam {
+    padding: 8em 0;
+  }
 
-	.fam {
-		padding: 8em 0;
-	}
+  .piece {
+    margin-bottom: 16em;
+  }
 
-	.piece{
-		margin-bottom: 16em;
-	}
+  .piece img {
+    max-height: 75em;
+  }
 
-	.piece img{
-		max-height: 75em;
-	}
+  .piece,
+  .cap {
+    text-align: center;
+  }
 
-	.piece, .cap{
-		text-align: center;
-	}
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em;
+  }
 
-	.info {
-		display: flex;
-		flex-wrap: wrap;
-		margin: 1em;
-	}
-	
-/* layout */
+  /* layout */
 
-	main {
-		display: flex;
-		overflow-y: clip;
-		pointer-events: none;
-	}
+  main {
+    display: flex;
+    overflow-y: clip;
+    pointer-events: none;
+  }
 
-	#index, #gal {
-		pointer-events: all;
-	}
+  #index,
+  #gal {
+    pointer-events: all;
+  }
 
-	#index{
-		z-index: 100;
-		overflow-y: scroll;
-		min-width: 480px;
-		max-height: 100%;
-	}
-	
-	#gal{
-		overflow-y: scroll;
-	}
+  #index {
+    z-index: 100;
+    overflow-y: scroll;
+    min-width: 480px;
+    max-height: 100%;
+  }
 
-		
-	#index > *{
-		min-width: 100%;
-	}
+  #gal {
+    overflow-y: scroll;
+  }
 
-	#mainTitle{
-		justify-content: center;
-		flex: 1;
-	}
+  #index > * {
+    min-width: 100%;
+  }
 
-	h2 {
-		margin-left: 1em;
-	}
+  #mainTitle {
+    justify-content: center;
+    flex: 1;
+  }
 
-	#menuTog{
-		display: none;
-	}
+  h2 {
+    margin-left: 1em;
+  }
 
-	.info {
-		justify-content: center;
-	}
+  #menuTog {
+    display: none;
+  }
 
-	.wordSP {
-		word-spacing: 1em;
-		margin-top: 2em;
-	}
+  .info {
+    justify-content: center;
+  }
 
-	.cap > ul {
-		justify-content: center;
-	}
+  .wordSP {
+    word-spacing: 1em;
+    margin-top: 2em;
+  }
 
-	.footnote {
-			margin-top: 36em;
-		}
+  .cap > ul {
+    justify-content: center;
+  }
 
-	/* CV */
-	#index.CV{
-		min-width: 0;
-		width: 240px;
-	}
+  .footnote {
+    margin-top: 36em;
+  }
 
-	.CV .space {
-	margin-left: 2.5em;
-	}
+  /* CV */
+  #index.CV {
+    min-width: 0;
+    width: 240px;
+  }
 
-	.timeline {
-		margin-left: 2em;
-	}
+  .CV .space {
+    margin-left: 2.5em;
+  }
 
-	.anual {
-		display: flex;
-		width: 100%;
-	}
+  .timeline {
+    margin-left: 2em;
+  }
 
-	.anual > p {
-		margin-right: 2em;
-	}
+  .anual {
+    display: flex;
+    width: 100%;
+  }
 
-	.record {
-		display:flex;
-		width: var(--record-width);
-		max-width: var(--record-width);
-	}
+  .anual > p {
+    margin-right: 2em;
+  }
 
-	.record > li {
-		overflow-wrap: break-word !important;
-	}
+  /* size record based on remaining space */
+  .record {
+    display: flex;
+    width: var(--record-width);
+    max-width: var(--record-width);
+  }
 
-	.record > li:nth-child(1){
-		min-width: var(--li-1-width) !important;
-		width: var(--li-1-width) !important;
-		max-width: var(--li-1-width) !important;
-		padding-right: 1.5em
-	}
-	.record > li:nth-child(2){
-		min-width: var(--li-2-width) !important;
-		width: var(--li-2-width) !important;
-		max-width: var(--li-2-width) !important;
-		padding-right: 1.5em;
-	}
-	.record > li:nth-child(3){
-		min-width: var(--li-3-width) !important;
-		width: var(--li-3-width) !important;
-		max-width: var(--li-3-width) !important;
-	}
+  .record > li {
+    overflow-wrap: break-word !important;
+  }
 
-	/* add separators to info items */
-	.info *:not(:first-child)::before{
-		content: '|';
-		margin: 1em;
-		font-style: normal;
-	}
-	/* highlight current place in index */
-	.highlight p, .highlight>a{
-		color: #8c3728;
-	}
+  /* column sizing calculations*/
+  .record > li:nth-child(1) {
+    min-width: var(--li-1-width) !important;
+    width: var(--li-1-width) !important;
+    max-width: var(--li-1-width) !important;
+    padding-right: 1.5em;
+  }
+  .record > li:nth-child(2) {
+    min-width: var(--li-2-width) !important;
+    width: var(--li-2-width) !important;
+    max-width: var(--li-2-width) !important;
+    padding-right: 1.5em;
+  }
+  .record > li:nth-child(3) {
+    min-width: var(--li-3-width) !important;
+    width: var(--li-3-width) !important;
+    max-width: var(--li-3-width) !important;
+  }
+
+  /* add separators to info items */
+  .info *:not(:first-child)::before {
+    content: "|";
+    margin: 1em;
+    font-style: normal;
+  }
+  /* highlight current place in index */
+  .highlight p,
+  .highlight > a {
+    color: #8c3728;
+  }
 }
