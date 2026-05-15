@@ -166,14 +166,13 @@
 		margin-bottom: 1em;
 	}
 
-	.space > a > p, .space > p, a.space, .space > .item {
-	margin-left: 4.5em;
+	/* control standard indenting */
+	.space {
+		margin-left: var(--date-width);
 }
 
-.halfSpace > a >p, .halfSpace > p, a.halfSpace {
-		margin-left: 1em;
 
-	}
+
 
 	.item {
 		display: flex;
@@ -185,13 +184,14 @@
 
 	.date {
 		text-align: right;
-		/* width: 3.5em; */
 		padding-right: 1em;
 	}
-	.date-l {
-		text-align: right;
-		/* width: 7.5em; */
-		padding-right: 1em;
+	
+	/* push out dates to account for a larger outlier in about page*/
+	.ext{
+		min-width: var(--date-width);
+		text-align: left;
+		padding-right: 0 !important;
 	}
 
 	.item a {
@@ -515,6 +515,10 @@
 	#index.CV{
 		min-width: 0;
 		width: 240px;
+	}
+
+	.CV .space {
+	margin-left: 2.5em;
 	}
 
 	.timeline {

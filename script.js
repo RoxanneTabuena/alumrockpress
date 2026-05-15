@@ -70,24 +70,36 @@ const unhighlight = () => {
     cur.classList.remove('highlight')
 }
 
-// set header height
+// set CSS variables
+
+// get relevant elements
 const header = document.querySelector('header');
 const root = document.documentElement;
+const date = document.querySelector('.date')
 
-// Function to measure and update
+// log header height
 function updateHeaderHeight() {
     const height = header.offsetHeight; // Gets height including padding/borders
     root.style.setProperty('--header-height', `${height}px`);
 }
 
-// set index width
-// Function to measure and update
+// log index width
 function updateIndexWidth() {
     const width = index.offsetWidth; // Gets width including padding/borders
     root.style.setProperty('--index-width', `${width}px`);
+}
+
+// log date width
+function updateDateWidth() {
+    if(!date){
+        return
+    }
+    const width = date.offsetWidth; // Gets width including padding/borders
+    root.style.setProperty('--date-width', `${width}px`);
 }
 
 // Run on load and window resize
 window.addEventListener('resize', updateHeaderHeight &&updateIndexWidth);
 updateHeaderHeight();
 updateIndexWidth();
+updateDateWidth();
