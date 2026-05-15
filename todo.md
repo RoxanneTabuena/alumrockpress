@@ -36,19 +36,30 @@ add CV to menus
 - adjust menu scrolling behavior 932 - 1023
     - position main content according to header height 932 - 10
     - understand what is triggering scrolling 10 - 1020
-    - adjust maon heoght max 1020 - 2023
-- mobile testing 1023 - 
-
-- set limit to CV width on desktop
-- Adjust CV spacing for narrow desktops 
-
-add document icon
+    - adjust main height max 1020 - 2023
+- mobile testing 1023 - 11 
+- set limit to CV width on desktop 310-340
+- Adjust CV spacing for narrow desktops 340-410
+- add document icon 410 - 4:16
 
 resources
+
+5.15
+- comment pages 10:19
+    - cv 10:19 - 10 31
+    - css
+        - edit date spacing 1048 - 1108
+    - current
+    - comissions
+    - books and zines
+    - about
 - add an art piece
+    - action video
+    - step - by - step
 - upload assets
+    - action video
+    - step - by -step
 
 Future:
-- individual scrolling for index
 - upcoming events
 - link CV items to site counterparts

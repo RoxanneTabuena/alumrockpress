@@ -5,7 +5,6 @@
 		margin-block-end: 0;
 		font-weight: 100;
 		max-width: 100vw;
-		/* background-color: white; */
 		position: relative;
 		z-index: inherit;
 	}
@@ -99,10 +98,12 @@
 
 	/* CV */
 
+	/* section titles */
 	#gal > section > h2 {
 		font-weight: bold;
 	}
 
+	/* italicize all first points unless they are classified as .plain */
 	.record > li:first-child:not(.plain){
 		font-style: italic;
 	}
@@ -125,27 +126,28 @@
 		z-index: 100;
 	}
 
-
+	/* upper page title */
 	#mainTitle {
 		display: flex;
 		align-items: center;
 	}
 
+	/* upper left logo/home button */
 	.home {
 		margin: 1em 1em 0 1em;
 		display:flex;
 		align-items: flex-end;
 		flex-grow: 0;
-	}
-
-	.home{
 		background-color: white;
 	}
 
+
 /* layout */
+	/* calculating variables for later use */
 	:root{
 		--header-height: 1em;
 		--index-width:1em;
+		--date-width: 1em;
 		--gal-width: calc(100vw - var(--index-width));
 		--record-width: calc(var(--gal-width) - 69px);
 		--li-1-width: calc(var(--record-width) * .35);
@@ -162,6 +164,7 @@
 	}
 
 /* index */
+	/* space below titles and sections */
 	h2, section{
 		margin-bottom: 1em;
 	}
@@ -169,8 +172,8 @@
 	/* control standard indenting */
 	.space {
 		margin-left: var(--date-width);
-}
-
+	}
+	
 
 
 
@@ -194,9 +197,9 @@
 		padding-right: 0 !important;
 	}
 
+	/* wrap the text of extra long index items */
 	.item a {
 		text-wrap: wrap;
-		/* max-width: 21.5em; */
 	}
 
 	/* contact animation */
@@ -205,6 +208,7 @@
 		cursor: pointer;
 	}
 
+	/* set size for page breaks */
 	.break {
 		height: 2em;
 	}
@@ -216,15 +220,18 @@
 		z-index: 10;
 	}
 
+	/* center images for each piece */
 	.piece  img {
 		display: block;
 		margin: auto;
 	}
 
+	/* indent image captions */
 	.cap {
 		padding: .5em;
 	}
 
+	/*  */
 	.piece > .cap {
 		margin: 1em;
 	}
