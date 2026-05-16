@@ -476,7 +476,10 @@ footer {
     overflow-y: scroll;
     min-width: 480px;
     max-height: 100%;
-	margin-top: 1em;
+  }
+
+  #index h2 {
+	padding-top: 1em;
   }
 
   #gal {

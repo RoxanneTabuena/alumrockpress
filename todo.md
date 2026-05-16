@@ -45,20 +45,19 @@ add CV to menus
 resources
 
 5.15
-- comment pages 10:19
+- comment pages 10:19 - 1230
     - cv 10:19 - 10 31
-    - css
+    - css 1031 - 1219
         - edit date spacing 1048 - 1108
-    - current
-    - comissions
-    - books and zines
-    - about
-- add an art piece
-    - action video
+- add an art piece 1108 - 2
     - step - by - step
-- upload assets
-    - action video
-    - step - by -step
+
+5.16
+- decrease h1 by 2 pts 223 - 225
+- Line break between Alum Rock Press logo and Page Title in Left Colum 225 - 227
+- Decrease font by 2 pts 227 - 228
+- 
+
 
 Future:
 - upcoming events
