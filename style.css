@@ -115,7 +115,7 @@ header {
   justify-content: space-between;
   margin: 0;
   left: 0;
-  background-color: white !important;
+  background-color: white;
 }
 
 header * {
@@ -414,6 +414,10 @@ footer {
     padding: 0 1em;
   }
 
+  header, header *{
+	background-color: transparent !important;
+  }
+
   #gal {
     max-width: var(--gal-width);
   }
@@ -584,7 +588,7 @@ footer {
   li.small::marker{
 	content: " ";
   }
-  
+
   /* highlight current place in index */
   .highlight p,
   .highlight > a {
