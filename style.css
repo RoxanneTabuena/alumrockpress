@@ -115,7 +115,6 @@ header {
   justify-content: space-between;
   margin: 0;
   left: 0;
-  background-color: white;
 }
 
 header * {
@@ -134,7 +133,6 @@ header * {
   display: flex;
   align-items: flex-end;
   flex-grow: 0;
-  background-color: white;
 }
 
 /* layout */
@@ -309,6 +307,7 @@ footer {
   header {
     /* trick to hide animation */
     box-shadow: 0em -1em 0em 0em white;
+    background-color: white;
   }
 
   .fam {
@@ -325,20 +324,8 @@ footer {
   }
 
   .info > *,
-  .cap,
-  .small {
-    text-align: left;
-  }
-
-  .small {
-    display: inline;
-  }
-
-  /* add these:| in-between your info items */
-  .small *:not(:first-child)::before {
-    content: "|";
-    margin: 1em;
-    font-style: normal;
+  .cap {
+    text-align: center;
   }
 
   /* auto group smaller info items */
