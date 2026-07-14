@@ -215,7 +215,6 @@ section {
 
 #gal {
   position: relative;
-  z-index: 100;
 }
 
 /* center images for each piece */
@@ -294,7 +293,7 @@ footer {
     position: fixed;
     background-color: white;
     box-shadow: 2px 2px 4px #484848;
-    z-index: 100;
+    z-index: 200;
     overflow: scroll;
     max-height: 90vh;
   }
