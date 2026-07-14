@@ -150,15 +150,17 @@ header * {
 
 main {
   position: relative;
-  min-height: calc(100vh - var(--header-height));
+  min-height: 100vh;
+  max-height: 100vh;
   overflow-y: scroll;
+  z-index: 10;
 }
 
 /* leave space for header */
-
-#index, #gal {
+#gal, #index {
   padding-top: var(--header-height);
 }
+
 /* space below titles and sections */
 h2,
 section {
@@ -213,7 +215,7 @@ section {
 
 #gal {
   position: relative;
-  z-index: 10;
+  z-index: 100;
 }
 
 /* center images for each piece */
@@ -292,7 +294,7 @@ footer {
     position: fixed;
     background-color: white;
     box-shadow: 2px 2px 4px #484848;
-    z-index: 90;
+    z-index: 100;
     overflow: scroll;
     max-height: 90vh;
   }
@@ -403,10 +405,6 @@ footer {
     padding: 0 1em;
   }
 
-  header, header *{
-	background-color: transparent !important;
-  }
-
   #gal {
     max-width: var(--gal-width);
   }
@@ -455,17 +453,18 @@ footer {
 
   main {
     display: flex;
-    overflow-y: clip;
+    overflow-y: hidden;
     pointer-events: none;
   }
 
   #index,
-  #gal {
+  #gal,
+  header {
     pointer-events: all;
   }
 
   #index {
-    z-index: 100;
+    z-index: 120;
     overflow-y: scroll;
     min-width: 480px;
     max-height: 100%;
