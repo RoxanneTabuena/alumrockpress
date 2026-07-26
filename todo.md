@@ -56,18 +56,9 @@ resources
 - decrease h1 by 2 pts 223 - 225
 - Line break between Alum Rock Press logo and Page Title in Left Colum 225 - 227
 - Decrease font by 2 pts 227 - 228
-- remove index line breaks, move CV up , change ARTICLES to INFO 238 - 243
-- comissions debug 243 - 2:52
+- 
 
-7.14
--debug scrolling issues 813 - 831
-    -ensure main is locked at the correct max height
-    - lock main height at 100vh & pad top to show header
-- figure out mobile header spacing 830 - 844
 
 Future:
-- learn HTTP Caching
-- Learn Meta Description
 - upcoming events
 - link CV items to site counterparts
-- auto update copywrite
