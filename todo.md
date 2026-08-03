@@ -56,7 +56,8 @@ resources
 - decrease h1 by 2 pts 223 - 225
 - Line break between Alum Rock Press logo and Page Title in Left Colum 225 - 227
 - Decrease font by 2 pts 227 - 228
-- 
+3.45
+- margin issues 345 - 
 
 
 Future:
