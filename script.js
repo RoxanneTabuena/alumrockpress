@@ -42,10 +42,10 @@ const togMenu = () => {
 const items = Array.from(document.querySelectorAll('.item'))
 
 if(items.length){
-
     items.forEach((item)=>{
         item.addEventListener('click', togMenu)
     })
+}
     
     
     // index highlight
@@ -61,10 +61,9 @@ if(items.length){
         item.classList.add('highlight')
     }
     
-    const unhighlight = () => {
+    const unhighlight = (key) => {
         cur.classList.remove('highlight')
     }
-}
 
 // set CSS variables
 
