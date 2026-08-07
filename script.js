@@ -41,26 +41,29 @@ const togMenu = () => {
 
 const items = Array.from(document.querySelectorAll('.item'))
 
-items.forEach((item)=>{
-    item.addEventListener('click', togMenu)
-})
+if(items.length){
 
-
-// index highlight
-let cur
-
-const highlight = (key) => {
-    const item = items.find((i)=>{
-        let val = String(i.lastElementChild.href)
-        val = val.substring(val.length-String(key).length)
-        return String(key) === val
+    items.forEach((item)=>{
+        item.addEventListener('click', togMenu)
     })
-    cur = item
-    item.classList.add('highlight')
-}
-
-const unhighlight = () => {
-    cur.classList.remove('highlight')
+    
+    
+    // index highlight
+    let cur
+    
+    const highlight = (key) => {
+        const item = items.find((i)=>{
+            let val = String(i.lastElementChild.href)
+            val = val.substring(val.length-String(key).length)
+            return String(key) === val
+        })
+        cur = item
+        item.classList.add('highlight')
+    }
+    
+    const unhighlight = () => {
+        cur.classList.remove('highlight')
+    }
 }
 
 // set CSS variables
