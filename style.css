@@ -170,7 +170,7 @@ section {
 
 /* control standard indenting */
 .space {
-  margin-left: var(--date-width);
+  padding-left: var(--date-width);
 }
 
 /* index lines */
@@ -248,7 +248,6 @@ section.left {
 /* footer */
 
 footer {
-  margin-top: 10em;
   text-align: center;
 }
 
@@ -456,6 +455,7 @@ footer {
     display: flex;
     overflow-y: hidden;
     pointer-events: none;
+    margin-bottom: 10em;
   }
 
   #index,
