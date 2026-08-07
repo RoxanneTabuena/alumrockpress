@@ -53,8 +53,7 @@ if(items.length){
     
     const highlight = (key) => {
         const item = items.find((i)=>{
-            let val = String(i.lastElementChild.href)
-            val = val.substring(val.length-String(key).length)
+            let val = String(i.lastElementChild.href).split("pic")[1]
             return String(key) === val
         })
         cur = item
