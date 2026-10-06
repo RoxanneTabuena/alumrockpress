@@ -71,29 +71,20 @@ const header = document.querySelector('header');
 const root = document.documentElement;
 const date = document.querySelector('.date')
 
-// log header height
-function updateHeaderHeight() {
-    const height = header.offsetHeight; // Gets height including padding/borders
-    root.style.setProperty('--header-height', `${height}px`);
-}
+function updateLayoutDimensions() {
+    // log element sizes
+    const headerHeight = header ? header.offsetHeight : 0;
+    const indexWidth = index ? index.offsetWidth : 0;
+    const dateWidth = date ? Math.ceil(date.offsetWidth) : null;
 
-// log index width
-function updateIndexWidth() {
-    const width = index.offsetWidth; // Gets width including padding/borders
-    root.style.setProperty('--index-width', `${width}px`);
-}
-
-// log date width
-function updateDateWidth() {
-    if(!date){
-        return
+    // update sizes on style sheet
+    root.style.setProperty('--header-height', `${headerHeight}px`);
+    root.style.setProperty('--index-width', `${indexWidth}px`);
+    if (dateWidth !== null) {
+        root.style.setProperty('--date-width', `${dateWidth}px`);
     }
-    const width = date.offsetWidth; // Gets width including padding/borders
-    root.style.setProperty('--date-width', `${Math.ceil(width)}px`);
 }
 
 // Run on load and window resize
-window.addEventListener('resize', updateHeaderHeight &&updateIndexWidth);
-updateHeaderHeight();
-updateIndexWidth();
-updateDateWidth();
+window.addEventListener('resize', updateLayoutDimensions);
+updateLayoutDimensions();
